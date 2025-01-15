@@ -26,16 +26,16 @@ export function HeroSection() {
 
       {/* Hero Content */}
       <div className="z-20 flex flex-col items-center mt-12 md:mt-0">
-        <h1 className="font-semibold text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl text-white">
+        <h1 className="font-semibold text-5xl md:text-6xl lg:text-8xl 2xl:text-8xl text-white">
           <span className="bg-gradient-to-r from-[#d80073] to-[#6e00b2] text-transparent bg-clip-text">
             Muito mais
           </span>{" "}
           que um
         </h1>
-        <h1 className="font-semibold text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl text-white">
+        <h1 className="font-semibold text-5xl md:text-6xl lg:text-8xl 2xl:text-8xl text-white">
           seguro viagem
         </h1>
-        <h4 className="mt-10 lg:mt-6 2xl:mt-12 font-light md:font-extralight md:text-sm lg:text-md 2xl:text-lg max-w-[640px] text-white/90">
+        <h4 className="mt-10 lg:mt-6 2xl:mt-12 font-light md:font-extralight md:text-sm lg:text-md xl:text-lg max-w-[640px] text-white/90">
           Somos uma insurtech, uma empresa de seguros que utiliza tecnologia de ponta para criar e distribuir seguros personalizados, focados na experiência do cliente durante toda a sua jornada.
         </h4>
         <div className="flex gap-4 mt-16 md:mt-16 lg:mt-10">
