@@ -1,5 +1,4 @@
-import { OpenAIStream, StreamingTextResponse } from 'ai'
-import OpenAI from 'openai'
+import { OpenAI } from 'openai'
 
 // Company knowledge base
 const companyInfo = `
@@ -27,28 +26,34 @@ const openai = new OpenAI({
 export async function POST(req: Request) {
   const { messages } = await req.json()
 
-  const response = await openai.chat.completions.create({
-    model: 'gpt-4',
-    stream: true,
-    messages: [
-      {
-        role: 'system',
-        content: `Você é um assistente virtual da Hero Seguros. Use estas informações para suas respostas:
-        ${companyInfo}
-        
-        Diretrizes:
-        - Seja amigável e profissional
-        - Responda apenas sobre a Hero Seguros e seus produtos/serviços
-        - Se não souber algo, diga que vai encaminhar para um atendente
-        - Mantenha respostas concisas e claras
-        - Use emojis ocasionalmente para um tom mais leve
-        `
-      },
-      ...messages
-    ],
-  })
+  try {
+    const response = await openai.chat.completions.create({
+      model: 'gpt-4',
+      messages: [
+        {
+          role: 'system',
+          content: `Você é um assistente virtual da Hero Seguros seu nome é Sofia. Use estas informações para suas respostas:
+          ${companyInfo}
+          
+          Diretrizes:
+          - Seja amigável e profissional
+          - Responda apenas sobre a Hero Seguros e seus produtos/serviços
+          - Se não souber algo, diga que vai encaminhar para um atendente
+          - Mantenha respostas concisas e claras
+          - Use emojis ocasionalmente para um tom mais leve
+          `
+        },
+        ...messages
+      ],
+    })
 
-  const stream = OpenAIStream(response)
-  return new StreamingTextResponse(stream)
+    // Retorne a resposta diretamente
+    return new Response(JSON.stringify(response), {
+      headers: { 'Content-Type': 'application/json' },
+    })
+  } catch (error) {
+    console.error("Erro ao processar a solicitação:", error)
+    return new Response("Erro interno do servidor", { status: 500 })
+  }
 }
 
