@@ -4,10 +4,10 @@ import Image from "next/image"
 
 export function MediaSection() {
   return (
-    <section className="py-16 px-12 bg-white">
+    <section className="py-16 px-4 md:px-10 lg:px-16 2xl:px-32 bg-white" id="hero-na-midia">
       <div className="container px-4 md:px-6">
         <h2 className="text-purple-600 font-semibold mb-4">HERO NA MÍDIA</h2>
-        <h3 className="text-6xl font-bold mb-12">
+        <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12">
           Reconhecendo{" "}
           <span className="bg-gradient-to-r from-[#d80073] to-[#6e00b2] text-transparent bg-clip-text">nossos heróis.</span>
         </h3>
@@ -17,7 +17,7 @@ export function MediaSection() {
           <div className="lg:col-span-2 grid gap-8">
             <article className="grid md:grid-cols-2 gap-6">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-V4B8VVEg2eqBYPioomr0C7Yb4ym4bZ.png"
+                src="/images/herois-1.png"
                 alt="Hero Seguros programa de indicações"
                 width={400}
                 height={300}
@@ -39,7 +39,7 @@ export function MediaSection() {
 
             <article className="grid md:grid-cols-2 gap-6">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-V4B8VVEg2eqBYPioomr0C7Yb4ym4bZ.png"
+                src="/images/herois-2.png"
                 alt="Hero Seguros crescimento"
                 width={400}
                 height={300}

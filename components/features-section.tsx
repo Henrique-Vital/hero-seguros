@@ -1,21 +1,23 @@
+//features-section.tsx
+
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Smartphone, Star, ShoppingBag, CreditCard, Rocket, Luggage } from 'lucide-react'
 
 export function FeaturesSection() {
   return (
-    <section className="py-16 px-12 bg-[#13111B]">
+    <section className="py-16 px-4 md:px-10 lg:px-16 2xl:px-32 text-center lg:text-left bg-[#0b0512]" id="nossos-produtos">
       <div className="container px-4 md:px-6">
-        <div className="flex justify-between items-start mb-12">
-          <div>
-            <h2 className="text-pink-500 font-semibold mb-4">PARA VOCÊ</h2>
-            <h3 className="text-4xl font-bold text-white">
+        <div className="lex flex-col lg:flex-row lg:justify-between lg:items-end mb-12">
+          <div className="text-center lg:text-left">
+            <h2 className="text-pink-500 text-start font-semibold mb-4">PARA VOCÊ</h2>
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 text-white">
               A melhor opção<br />
               quando o assunto é{" "}
               <span className="bg-gradient-to-r from-[#d80073] to-[#6e00b2] text-transparent bg-clip-text">experiência.</span>
             </h3>
           </div>
-          <div className="flex gap-4">
+          <div className="flex lg:items-end gap-4">
             <Button variant="ghost" className="text-gray-400 hover:text-white hover:bg-purple-900/50">
               para sua viagem
             </Button>

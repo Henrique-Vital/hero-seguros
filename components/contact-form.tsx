@@ -56,12 +56,12 @@ export function ContactForm() {
   }
 
   return (
-    <section className="py-16 px-12 bg-[#13111B]">
+    <section className="py-16 px-4 md:px-10 lg:px-16 2xl:px-32 bg-[#0b0512]">
       <div className="container px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-pink-500 text-sm mb-4">VENDA NOSSO SEGURO</h2>
-            <h3 className="text-6xl font-bold text-white mb-4">
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               Você também<br />
               pode fazer parte<br />
               <span className="bg-gradient-to-r from-[#d80073] to-[#6e00b2] text-transparent bg-clip-text">dessa história.</span>

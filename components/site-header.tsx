@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button"
 
 export function SiteHeader() {
   return (
-    <header className="w-full pt-10 font-light z-20 bg-[#13111B]">
+    <header className="w-full pt-10 font-light z-20 bg-[#0b0512]">
       <div className="w-full h-full flex items-center justify-between px-6 md:px-10 lg:px-16 2xl:px-32">
-        <Link href="/">
+        <Link href="https://heroseguros.com.br/">
           <Image 
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero-logo-VKaUXzinakUJQ3X6j0LhOUoRO6drQc.svg" 
             alt="Logotipo da empresa Hero Seguros" 
@@ -19,7 +19,7 @@ export function SiteHeader() {
           <NavItem href="#" text="Quem somos" />
           <NavItem href="https://seguroviagem.heroseguros.com.br/" text="Seguro Viagem" external />
           <NavItem href="https://seguro.simple2u.com.br/hero-seguro-celular/" text="Seguro Celular" external />
-          <NavItem href="#" text="Para empresas" />
+          <NavItem href="#para-empresas" text="Para empresas" />
         </nav>
         <div className="hidden md:block">
           <Button className="
@@ -36,8 +36,8 @@ export function SiteHeader() {
         </div>
         <div className="md:hidden">
           <div className="transition-all duration-75 flex flex-col h-2 w-6 z-20 gap-1">
-            <span className="transition-all duration-300 h-px w-6 bg-light"></span>
-            <span className="transition-all duration-300 h-px w-6 bg-light"></span>
+            <span className="transition-all duration-300 h-px w-6 bg-light false"></span>
+            <span className="transition-all duration-300 h-px w-6 bg-light false"></span>
           </div>
         </div>
       </div>

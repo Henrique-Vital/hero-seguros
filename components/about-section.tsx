@@ -3,12 +3,12 @@ import { Card } from "@/components/ui/card"
 
 export function AboutSection() {
   return (
-    <section className="py-16 px-12 bg-white">
+    <section className="py-16 px-4 md:px-10 lg:px-16 2xl:px-32 bg-white text-center lg:text-left">
       <div className="container px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-purple-600 font-semibold mb-4">NÓS MUDAMOS O JOGO</h2>
-            <h3 className="text-4xl font-bold mb-6">
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Nascemos para{" "}
               <span className="bg-gradient-to-r from-[#d80073] to-[#6e00b2] text-transparent bg-clip-text">
                 descomplicar o mercado.
@@ -22,7 +22,7 @@ export function AboutSection() {
           <div>
             <div className="flex items-start gap-4 mb-8">
               <Image
-                src="/placeholder.svg?height=60&width=60"
+                src="/images/generali.png"
                 alt="Generali Logo"
                 width={60}
                 height={60}
@@ -50,7 +50,7 @@ export function AboutSection() {
           </div>
         </div>
 
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <div className="grid grid-cols-2 md:grid-cols-6 gap-8 items-center">
             {[...Array(12)].map((_, i) => (
               <div key={i} className="flex items-center justify-center">
@@ -64,7 +64,7 @@ export function AboutSection() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

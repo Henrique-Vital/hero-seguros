@@ -4,33 +4,33 @@ import Image from 'next/image'
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#13111B] py-12 px-12">
+    <footer className="bg-[#0b0512] py-12 px-4 md:px-10 lg:px-16 2xl:px-32">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col space-y-8">
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div className="space-y-6">
               {/* Logo */}
-              <Link href="/" className="inline-block">
+              <Link href="https://heroseguros.com.br/" className="inline-block">
                 <Image 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero-logo-VKaUXzinakUJQ3X6j0LhOUoRO6drQc.svg"
                   alt="Hero Seguros Logo"
                   width={120}
                   height={50}
-                  className="h-10"
+                  className="h-14"
                 />
               </Link>
               
               {/* Social Media */}
               <div className="flex space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="https://www.linkedin.com/company/heroseguros/posts/?feedView=all" className="text-gray-400 hover:text-white transition-colors">
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="https://www.instagram.com/heroseguros/" className="text-gray-400 hover:text-white transition-colors">
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="https://www.youtube.com/@HeroSegurosOficial" className="text-gray-400 hover:text-white transition-colors">
                   <Youtube className="h-5 w-5" />
                   <span className="sr-only">YouTube</span>
                 </Link>
@@ -43,17 +43,17 @@ export function SiteFooter() {
                 <h4 className="text-white font-semibold">Institucional</h4>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                    <Link href="#nossos-produtos" className="text-gray-400 hover:text-white transition-colors">
                       Nossos produtos
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                    <Link href="#para-empresas" className="text-gray-400 hover:text-white transition-colors">
                       Para empresas
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                    <Link href="#hero-na-midia" className="text-gray-400 hover:text-white transition-colors">
                       Hero na mídia
                     </Link>
                   </li>
@@ -64,12 +64,12 @@ export function SiteFooter() {
                 <h4 className="text-white font-semibold">Nossos seguros</h4>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                    <Link href="https://seguroviagem.heroseguros.com.br/" className="text-gray-400 hover:text-white transition-colors">
                       Seguro viagem
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                    <Link href="https://seguro.simple2u.com.br/hero-seguro-celular/" className="text-gray-400 hover:text-white transition-colors">
                       Seguro celular
                     </Link>
                   </li>

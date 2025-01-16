@@ -1,28 +1,31 @@
+//hero-section.tsx
+
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section className="px-6 md:px-10 lg:px-16 2xl:px-32 py-16 md:py-20 lg:pt-16 lg:pb-16 2xl:pt-24 2xl:pb-32 relative w-full flex flex-col gap-16 md:gap-24 lg:gap-12 2xl:gap-20 items-center text-center overflow-hidden bg-[#13111B]">
+    <section className=" px-6 md:px-10 lg:px-16 2xl:px-32  py-16 md:py-20 lg:pt-16 lg:pb-16 2xl:pt-24 2xl:pb-32  relative w-full  flex flex-col gap-16 md:gap-24 lg:gap-12 2xl:gap-20 items-center  text-center text-light  overflow-hidden  bg-[#0b0512]">
       {/* Background Effects */}
-      <div className="absolute left-0 top-0 w-1/2 h-full">
+      <div className="absolute left-1 sm:-top-16 md:-top-16 lg-top-16 2x1:-top-16 z-0 lg:h-5/6 2x1:h-full w-1/2 h-full opacity-80 ">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/esquerda-shadow-purple-UJmSzSDiZoFqOFVvr5xXVxUU6p5FOe.svg"
-          alt=""
-          fill
-          className="object-cover"
-          priority
-        />
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/esquerda-shadow-purple-UJmSzSDiZoFqOFVvr5xXVxUU6p5FOe.svg"
+            alt=""
+            fill
+            className=" "
+            priority
+          />
       </div>
-      <div className="absolute right-0 top-0 w-1/2 h-full">
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/direita-shadow-pink-j6znByjX8YyFoOjxUBomegcLbRwpec.svg"
-          alt=""
-          fill
-          className="object-cover opacity-50"
-          priority
-        />
+      <div className="absolute md:-right-32 lg:-right-24 md:-bottom-24 lg:-bottom-16 z-0 opacity-50 lg:h-5/6 2xl:h-full w-1/2 h-full flex flex-col items-start ">
+          <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/direita-shadow-pink-j6znByjX8YyFoOjxUBomegcLbRwpec.svg"
+              alt=""
+              fill
+              className=""
+              priority
+            />
       </div>
+
 
       {/* Hero Content */}
       <div className="z-20 flex flex-col items-center mt-12 md:mt-0">

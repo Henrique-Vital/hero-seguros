@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {
   Accordion,
@@ -11,11 +12,11 @@ import { Monitor, Code2, Database, Heart } from 'lucide-react'
 
 export function BusinessSection() {
   return (
-    <section className="py-16 px-12 bg-white">
+    <section className="py-16 px-4 md:px-10 lg:px-16 2xl:px-32 bg-white" id="para-empresas">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-purple-600 font-semibold mb-4">PARA EMPRESAS</h2>
-          <h3 className="text-6xl font-bold">
+          <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12">
             Bem-vindo ao{" "}
             <span className="bg-gradient-to-r from-[#d80073] to-[#6e00b2] text-transparent bg-clip-text">
               novo jeito de vender seguros
@@ -67,29 +68,20 @@ export function BusinessSection() {
               </AccordionItem>
             </Accordion>
           </div>
-
-          <div className="relative min-h-[400px] bg-purple-950 rounded-lg overflow-hidden">
-          
-          <div className="absolute inset-0 bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GMDQPxtE3F9tLlLA1YDLaxGN6dtdwg.png')] bg-cover bg-center opacity-50" />
-            <div className="relative h-full flex flex-col items-center justify-center p-8 text-center">
-              <div className="space-y-4 mb-8">
-                <p className="text-pink-500 text-5xl font-bold tracking-wider" style={{
-                  textShadow: '0 0 10px rgba(236, 72, 153, 0.7), 0 0 20px rgba(236, 72, 153, 0.5)'
-                }}>
-                  BORN
-                </p>
-                <p className="text-pink-500 text-2xl font-medium" style={{
-                  textShadow: '0 0 8px rgba(236, 72, 153, 0.7)'
-                }}>
-                  TO BE
-                </p>
-                <p className="text-pink-500 text-5xl font-bold tracking-wider" style={{
-                  textShadow: '0 0 10px rgba(236, 72, 153, 0.7), 0 0 20px rgba(236, 72, 153, 0.5)'
-                }}>
-                  HERO
-                </p>
-              </div>
-              <Button className="bg-pink-600 hover:bg-pink-700">
+          <div className="relative min-h-[400px] bg-purple-950 rounded-lg overflow-hidden">          
+          <div className="absolute inset-0">
+              <Image
+                src="/images/business-bg.png" // Caminho relativo na pasta "public"
+                alt="Background"
+                layout="fill" // Preenche a div pai
+                objectFit="cover" // Mesma funcionalidade do bg-cover
+                objectPosition="center" // Mesma funcionalidade do bg-center
+                className="opacity-50" // Controle de opacidade
+                priority // Carregamento prioritário para imagens importantes
+              />
+            </div>
+            <div className="relative h-full flex flex-col items-center justify-center p-8 text-center">              
+              <Button className="bg-pink-600 hover:bg-pink-700 mt-auto">
                 Entre em contato
               </Button>
             </div>
