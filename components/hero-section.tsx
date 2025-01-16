@@ -25,8 +25,6 @@ export function HeroSection() {
               priority
             />
       </div>
-
-
       {/* Hero Content */}
       <div className="z-20 flex flex-col items-center mt-12 md:mt-0">
         <h1 className="font-semibold text-5xl md:text-6xl lg:text-8xl 2xl:text-8xl text-white">
@@ -66,7 +64,6 @@ export function HeroSection() {
           </Button>
         </div>
       </div>
-
       {/* Stats Cards */}
       <div className="flex flex-col md:flex-row mt-10 md:mt-0 gap-4 md:gap-2 lg:gap-4 text-left z-20 w-full justify-between">
         {[

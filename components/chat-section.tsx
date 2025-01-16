@@ -48,7 +48,7 @@ export function ChatSection() {
   };
 
   return (
-    <section className="py-16 px-12 bg-[#0b0512]">
+    <section className="py-16 px-4 md:px-10 lg:px-16 2xl:px-32 bg-[#0b0512]">
       <div className="container px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
